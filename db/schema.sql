@@ -1,13 +1,23 @@
-const mysql = require('mysql2');
+DROP DATABASE IF EXISTS employees;
+CREATE DATABASE employees;
+USE employees;
 
-require('dotenv').config();
+CREATE TABLE department (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    department_name VARCHAR(30) NOT NULL
+);
 
-const connection = mysql.createConnection({
-  host: 'localhost',
-  port: 3306,
-  user: 'root',
-  password: process.env.MYSQL_PASSWORD,
-  database: 'employees'
-});
+CREATE TABLE role (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(30) NOT NULL,
+    salary DECIMAL(10, 2) NOT NULL,
+    department_id INTEGER
+);
 
-module.exports = connection;
+CREATE TABLE employee(
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    first_name VARCHAR(30) NOT NULL,
+    last_name VARCHAR(30) NOT NULL,
+    role_id INTEGER,
+    manager_id INTEGER
+);
