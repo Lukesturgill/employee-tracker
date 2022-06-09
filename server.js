@@ -11,7 +11,8 @@ connection.connect((error) => {
   console.log(chalk.yellow.bold(`====================================================================================`));
   console.log(``);
   console.log(chalk.greenBright.bold(figlet.textSync('Employee Tracker')));
-  console.log(``);                                                        
+  console.log(``); 
+  console.log(chalk.yellow.bold(`====================================================================================`));                                                       
   promptUser();
 });
 
