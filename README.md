@@ -26,7 +26,7 @@ Employee Tracker is a CLI application that allows the user to keep a database of
 `npm start` 
 
 ## Demo
-![Application screenshot]()
+![Application screenshot](https://github.com/Lukesturgill/employee-tracker/blob/main/assets/Screen%20Shot%202022-06-08%20at%2011.59.25%20PM.png?raw=true)
 
 ###
 * Video demo
