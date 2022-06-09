@@ -10,20 +10,21 @@ Employee Tracker is a CLI application that allows the user to keep a database of
 * Inquirer
 
 ## Installation 
-`npm init`
-`npm install mysql2`
-`npm install validator`
-`npm install console.table`
-`npm install figlet`
-`npm install chalk`
-`npm install inquirer`
+* `npm init`
+* `npm install mysql2`
+* `npm install validator`
+* `npm install console.table`
+* `npm install figlet`
+* `npm install chalk`
+* `npm install inquirer`
 
 ### Open mySQL in terminal
-`source db/schema.sql`
-`source db/seeds.sql`
+* `mysql -u root -p`
+* `source db/schema.sql`
+* `source db/seeds.sql`
 
 ### Open terminal
-`npm start` 
+* `npm start` 
 
 ## Demo
 ![Application screenshot](https://github.com/Lukesturgill/employee-tracker/blob/main/assets/Screen%20Shot%202022-06-08%20at%2011.59.25%20PM.png?raw=true)
